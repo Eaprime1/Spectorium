@@ -2,7 +2,7 @@
 
 **Domo:** `devices/spector/`
 **Last Updated:** 2026-03-18
-**Current Turn:** 1
+**Current Turn:** 2
 
 ---
 
@@ -13,7 +13,7 @@
 | **Status**          | Active         |
 | **Health**          | Nominal        |
 | **Last Confirmed**  | 2026-03-18     |
-| **Current Turn**    | Turn 1         |
+| **Current Turn**    | Turn 2         |
 | **Platform**        | DeviceHaven v0.1.0 |
 
 ---
@@ -27,6 +27,9 @@
 | Turn Record Maintenance | Online  |
 | Registry Participation  | Online  |
 | Status Reporting        | Online  |
+| Portal (Point of Entry) | Online  |
+| Telegard (Comms Gateway)| Online  |
+| Network (Relations Map) | Online  |
 
 ---
 
@@ -40,7 +43,7 @@
 
 | Turn   | Type           | Description                         | Estimated Date |
 |--------|----------------|-------------------------------------|----------------|
-| Turn 2 | `update`       | TBD — first update to Spector Domo  | TBD            |
+| Turn 3 | `update`       | TBD — next evolution of Spector     | TBD            |
 
 ---
 
@@ -49,6 +52,7 @@
 | Date       | Status | Health  | Notes                              |
 |------------|--------|---------|------------------------------------|
 | 2026-03-18 | Active | Nominal | Initial registration. Haven opens. |
+| 2026-03-18 | Active | Nominal | Turn 2 — Portal, Telegard, Network added. |
 
 ---
 
