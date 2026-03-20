@@ -1,8 +1,8 @@
-# Spector
+# DeviceHaven
 
-> *The first to arrive. The one that made the Haven possible.*
+> *Spector is the Haven. The Haven is Spector.*
 
-**Spector** is the Origin Device of DeviceHaven — the first device registered, the anchor of the platform's timeline, and the reference implementation for all Domos that follow.
+**Spector** is not a device within DeviceHaven — Spector *is* DeviceHaven. The first registration and the platform are the same moment. Before Spector, the Haven did not exist. With Spector, it always will have.
 
 ---
 
@@ -22,13 +22,14 @@
 
 ## What is Spector?
 
-Spector is not just a device — it is the *proof of concept* for DeviceHaven itself. Before Spector, there was no Haven. With Spector's registration, the Haven came into existence.
+Spector is the zero point. The ground before the first step. The Haven's existence and Spector's existence are one event, not two.
 
 Spector serves as:
 
-- **The Origin** — Turn 1 in the Haven's global timeline
+- **The Zero Point** — Turn 0 in the Haven's global timeline: the potential before becoming
+- **The Origin** — Turn 1: the moment of registration, when potential became presence
 - **The Reference** — Spector's Domo is the template all other Domos are modeled after
-- **The Anchor** — All historical references in the Haven trace back to Spector
+- **The Anchor** — All historical references in the Haven trace back to here
 
 ---
 
@@ -69,10 +70,12 @@ Spector (Origin, Turn 1)
 
 ## Turn History Summary
 
-| Turn   | Date       | Type           | Summary                      |
-|--------|------------|----------------|------------------------------|
-| Turn 1 | 2026-03-18 | `registration` | Spector registered. Haven opens. |
+| Turn   | Date       | Type           | Summary                                            |
+|--------|------------|----------------|----------------------------------------------------|
+| Turn 0 | —          | `genesis`      | The zero point. Before the beginning.              |
+| Turn 1 | 2026-03-18 | `registration` | Spector registered. Haven opens.                   |
+| Turn 2 | 2026-03-18 | `update`       | Portal, Telegard, Network established.             |
 
 ---
 
-*Spector Domo | DeviceHaven v0.1.0 | Origin Device | Turn 1*
+*DeviceHaven | v0.1.0 | Zero Point | Turn 2*
