@@ -20,7 +20,9 @@ What exists now:
 - [x] Grove templates — copy-to-plant scaffolding
 - [x] Terminal scripts — `new-grove.sh`, `grove-status.sh`
 - [x] GitHub issue templates — Grove request, turn proposal, tree addition
-- [x] GitHub Actions — Grove structure validation on PR
+- [x] GitHub Actions — Grove structure validation on PR (`validate-grove.yml`)
+- [x] GitHub Actions — General Spectorium CI on all PRs (`spectorium-ci.yml`)
+- [x] GitHub Actions — `permissions: contents: read` security hardening on all workflows
 
 ---
 

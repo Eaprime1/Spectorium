@@ -6,6 +6,9 @@ on:
       - 'groves/**'
       - 'GROVES.md'
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     name: Grove Structure Check

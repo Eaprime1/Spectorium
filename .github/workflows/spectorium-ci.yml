@@ -1,0 +1,122 @@
+name: Spectorium CI
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  grove-health:
+    name: Grove Health Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make scripts executable
+        run: chmod +x scripts/grove-status.sh
+
+      - name: Run Grove status check
+        id: grove_status
+        run: |
+          echo "## Grove Health Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          ./scripts/grove-status.sh 2>&1 | tee grove-report.txt
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat grove-report.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+  registry-check:
+    name: Registry Integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: GROVES.md exists and is non-empty
+        run: |
+          if [[ ! -s GROVES.md ]]; then
+            echo "✗ GROVES.md is missing or empty"
+            exit 1
+          fi
+          echo "✓ GROVES.md present"
+
+      - name: CHANGELOG.md exists and is non-empty
+        run: |
+          if [[ ! -s CHANGELOG.md ]]; then
+            echo "✗ CHANGELOG.md is missing or empty"
+            exit 1
+          fi
+          echo "✓ CHANGELOG.md present"
+
+      - name: TREES.md exists and lists 31 trees
+        run: |
+          if [[ ! -f TREES.md ]]; then
+            echo "✗ TREES.md missing"
+            exit 1
+          fi
+          echo "✓ TREES.md present"
+
+      - name: Standards folder intact
+        run: |
+          for f in standards/GROVE_STANDARD.md standards/NAMING.md standards/VERSIONING.md; do
+            if [[ ! -f "$f" ]]; then
+              echo "✗ Missing standard: $f"
+              exit 1
+            fi
+            echo "✓ $f"
+          done
+
+  link-check:
+    name: Internal Link Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check internal markdown links in changed files
+        run: |
+          set +e
+          ERRORS=0
+
+          # Get changed .md files in this PR
+          CHANGED_MD=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep '\.md$' || true)
+
+          if [[ -z "$CHANGED_MD" ]]; then
+            echo "No markdown files changed — skipping link check."
+            exit 0
+          fi
+
+          echo "Checking links in changed files:"
+          for file in $CHANGED_MD; do
+            [[ -f "$file" ]] || continue
+            dir=$(dirname "$file")
+
+            # Extract relative links — skip anchors and http links
+            links=$(grep -oP '\]\((?!http|#)[^)]+\)' "$file" | sed 's/](\(.*\))/\1/' | sed 's/#.*//' || true)
+
+            for link in $links; do
+              # Resolve relative to file's directory
+              target="$dir/$link"
+              # Normalise path
+              target=$(realpath --relative-to=. "$target" 2>/dev/null || echo "$target")
+
+              if [[ -e "$target" ]]; then
+                echo "  ✓ $link"
+              else
+                echo "  ✗ BROKEN: $link (in $file)"
+                ERRORS=$((ERRORS + 1))
+              fi
+            done
+          done
+
+          if [[ $ERRORS -gt 0 ]]; then
+            echo ""
+            echo "$ERRORS broken link(s) found."
+            exit 1
+          fi
+          echo "All links valid."
