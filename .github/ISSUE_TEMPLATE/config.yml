@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Grove Standard
+    url: https://github.com/Eaprime1/device/blob/main/standards/GROVE_STANDARD.md
+    about: Read the Grove Standard before planting a new Grove.
+  - name: Trees Taxonomy
+    url: https://github.com/Eaprime1/device/blob/main/TREES.md
+    about: Browse all 31 trees and choose yours.
+  - name: Contributing Guide
+    url: https://github.com/Eaprime1/device/blob/main/CONTRIBUTING.md
+    about: Full guide to contributing to the Spectorium.
