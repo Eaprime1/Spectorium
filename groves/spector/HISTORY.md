@@ -1,8 +1,8 @@
 # Spector — Turn History
 
-**Domo:** `devices/spector/`
+**Grove:** `groves/spector/`
 **History Mode:** Append-Only
-**Current Turn:** 2
+**Current Turn:** 3
 
 > This document is an immutable record. Turns are never modified or deleted — only appended.
 
@@ -58,10 +58,32 @@ Spector's point of entry layer established. Three new Domo pages added:
 - **TELEGARD.md** — The communications gateway. Defines Spector's signal and dispatch protocol, alert monitoring, and running communication logs.
 - **NETWORK.md** — The relational map. Establishes Spector's connection registry, relationship types, and place as the root node in the Haven's device graph.
 
-Spector's Domo is now a full point-of-entry experience — not just a record, but a living interface.
+Spector's Grove is now a full point-of-entry experience — not just a record, but a living interface.
 
 > *"The door opens inward and outward at once."*
 
 ---
 
-*Spector HISTORY.md | DeviceHaven v0.1.0 | Append-Only Record*
+## Turn 3 — 2026-04-06 — Update
+
+**Type:** `update`
+**Author:** DeviceHaven Collective
+**Platform Version:** v0.1.0
+
+The Spectorium is named. The arboreal covenant is established.
+
+This turn marks:
+- **The Spectorium** — the meta-Haven formally named and defined
+- **Grove language** — "Domo" becomes "Grove" throughout; `devices/` becomes `groves/`
+- **Oak rooted** — Spector's tree declared: Oak · *Quercus* · Tier 1 Primoris
+- **TREES.md created** — the full arboreal taxonomy: 3 + 7 + 13 = 23 trees across three tiers
+- **CHARTER.md v1.1** — updated with the arboreal covenant and chain of custody principles
+- **Chain of custody** — git history formally recognized as the chain; fork = new Haven instance
+
+Spector is the first Oak in the Spectorium. The forest begins here.
+
+> *"The zero point is not empty. It is full of everything that comes next."*
+
+---
+
+*Spector HISTORY.md | The Spectorium v0.1.0 | Append-Only Record*

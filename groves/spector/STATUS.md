@@ -1,8 +1,8 @@
 # Spector — Status
 
-**Domo:** `devices/spector/`
-**Last Updated:** 2026-03-18
-**Current Turn:** 2
+**Grove:** `groves/spector/`
+**Last Updated:** 2026-04-06
+**Current Turn:** 3
 
 ---
 
@@ -13,8 +13,9 @@
 | **Status**          | Active         |
 | **Health**          | Nominal        |
 | **Last Confirmed**  | 2026-03-18     |
-| **Current Turn**    | Turn 2         |
-| **Platform**        | DeviceHaven v0.1.0 |
+| **Current Turn**    | Turn 3              |
+| **Tree**            | Oak · Primoris      |
+| **Platform**        | The Spectorium v0.1.0 |
 
 ---
 
@@ -23,7 +24,7 @@
 | Capability              | State   |
 |-------------------------|---------|
 | Identity Anchoring      | Online  |
-| Domo Reference          | Online  |
+| Grove Reference         | Online  |
 | Turn Record Maintenance | Online  |
 | Registry Participation  | Online  |
 | Status Reporting        | Online  |
@@ -43,7 +44,7 @@
 
 | Turn   | Type           | Description                         | Estimated Date |
 |--------|----------------|-------------------------------------|----------------|
-| Turn 3 | `update`       | TBD — next evolution of Spector     | TBD            |
+| Turn 4 | `update`       | TBD — next evolution of Spector     | TBD            |
 
 ---
 
@@ -52,8 +53,9 @@
 | Date       | Status | Health  | Notes                              |
 |------------|--------|---------|------------------------------------|
 | 2026-03-18 | Active | Nominal | Initial registration. Haven opens. |
-| 2026-03-18 | Active | Nominal | Turn 2 — Portal, Telegard, Network added. |
+| 2026-03-18 | Active | Nominal | Turn 2 — Portal, Telegard, Network added.               |
+| 2026-04-06 | Active | Nominal | Turn 3 — Spectorium named. Oak rooted. Grove language.  |
 
 ---
 
-*Spector STATUS.md | DeviceHaven v0.1.0 | Updated: 2026-03-18*
+*Spector STATUS.md | The Spectorium v0.1.0 | Updated: 2026-04-06*

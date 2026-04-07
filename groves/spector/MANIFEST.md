@@ -1,24 +1,25 @@
-# Spector — Device Manifest
+# Spector — Grove Manifest
 
-**Domo:** `devices/spector/`
-**Manifest Version:** 1.0
-**Last Updated:** 2026-03-18
+**Grove:** `groves/spector/`
+**Manifest Version:** 1.1
+**Last Updated:** 2026-04-06
 
 ---
 
-## Device Identity
+## Grove Identity
 
 | Field              | Value                                          |
 |--------------------|------------------------------------------------|
 | **Device Name**    | Spector                                        |
 | **Device Slug**    | `spector`                                      |
 | **Device ID**      | `spector-origin-001`                           |
+| **Tree**           | Oak (*Quercus*) · Tier 1 — Primoris            |
 | **Device Type**    | Origin                                         |
 | **Haven Turn**     | Turn 1                                         |
 | **Registered**     | 2026-03-18                                     |
 | **Status**         | Active                                         |
 | **Owner**          | DeviceHaven Collective                         |
-| **Domo Version**   | 1.0.0                                          |
+| **Grove Version**  | 1.1.0                                          |
 
 ---
 
