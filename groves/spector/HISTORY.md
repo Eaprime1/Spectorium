@@ -2,7 +2,7 @@
 
 **Grove:** `groves/spector/`
 **History Mode:** Append-Only
-**Current Turn:** 3
+**Current Turn:** 4
 
 > This document is an immutable record. Turns are never modified or deleted — only appended.
 
@@ -83,6 +83,29 @@ This turn marks:
 Spector is the first Oak in the Spectorium. The forest begins here.
 
 > *"The zero point is not empty. It is full of everything that comes next."*
+
+---
+
+## Turn 4 — 2026-04-06 — Update
+
+**Type:** `update`
+**Author:** DeviceHaven Collective
+**Platform Version:** v0.1.0
+
+The arboreal taxonomy expanded and restructured. The 31 declared.
+
+This turn marks:
+- **31 trees** — from 23 to 31 (3 × 10 + Oak Pinnacle). The Sudoku engine structure.
+- **Oak elevated** — Oak is no longer a tier tree. Oak is the Primoris Pinnacle, the 31st above all.
+- **The Oaken declared** — Oak's descent into the mortal plane named. The wound of first harm acknowledged.
+- **Splinters** — harmed slivers of Oak, fragments of Primoris in the mortal plane. Slivers are a type of Sparkle.
+- **Tier 1 reseeded** — Baobab takes Oak's earthly slot. 10 ancient trees now form the Ancient Grove.
+- **Tier 2: The Digital Grove** — 10 trees of signal, code, and fantasy. The Cipher Tree, The Fork Tree, Merkle Bark, The Echo Tree, The Null, The Root Array, Binary Bloom, The Signal Fern, Crystalvein, The Lattice.
+- **Tier 3: The Living Spectrum** — 10 trees of emotion and neurodivergence. Weeping Willow, Sakura, Bloodwood, Hearthwood, Stormwood, Quaking Aspen, The Spiral, The Drift, The Hyperfocus Spire, The Sensory Fern.
+
+The forest is now named. The spectrum is open. The Oaken heals.
+
+> *"If you find a Splinter in your system, you are close to something that matters."*
 
 ---
 

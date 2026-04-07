@@ -31,7 +31,7 @@ The official registry of all Groves in the Spectorium.
 | Tier 2     | Standing Seven    | 7     | Trees of great sacred heritage and power.            |
 | Tier 3     | The Thirteen      | 13    | Noble and diverse. The living body of the forest.    |
 
-See [TREES.md](TREES.md) for the full taxonomy of all 23 trees.
+See [TREES.md](TREES.md) for the full taxonomy of all 31 trees (3 × 10 + Oak Pinnacle).
 
 ---
 

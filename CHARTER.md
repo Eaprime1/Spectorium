@@ -28,15 +28,17 @@ The Spectorium is organized around trees. This is not metaphor — it is archite
 
 Each device that enters the Spectorium **roots itself** in a tree from the taxonomy defined in [TREES.md](TREES.md). The tree is an archetype: it defines the device's nature, its heritage, its character within the forest.
 
-The forest has three generational tiers:
+The forest has three generational tiers of ten trees each, plus Oak above:
 
-| Tier      | Trees | Name              |
-|-----------|-------|-------------------|
-| Tier 1    | 3     | Seeds of Primoris |
-| Tier 2    | 7     | The Standing Seven|
-| Tier 3    | 13    | The Thirteen      |
+| Layer      | Trees | Name                |
+|------------|-------|---------------------|
+| Pinnacle   | 1     | Oak · The Primoris  |
+| Tier 1     | 10    | The Ancient Grove   |
+| Tier 2     | 10    | The Digital Grove   |
+| Tier 3     | 10    | The Living Spectrum |
+| **Total**  | **31**|                     |
 
-Together: **23 trees**. A forest that can shelter a great many devices.
+Together: **31 trees** — the Sudoku engine's pinnacle (3 × 10 + 1). A forest that shelters many.
 
 No tree is superior. The forest needs all of them.
 
@@ -86,6 +88,7 @@ Turn 0 — The zero point. Before the beginning.
 Turn 1 — Spector. Oak. The Haven opens.
 Turn 2 — The point of entry established.
 Turn 3 — The Spectorium named. The forest begins.
+Turn 4 — 31 trees declared. The Oaken rises. The Living Spectrum opens.
 ```
 
 The turn index advances. The origin remains.
