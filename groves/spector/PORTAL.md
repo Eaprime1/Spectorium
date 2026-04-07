@@ -2,7 +2,7 @@
 
 > *You have arrived. Welcome to Spector.*
 
-**The Portal is the point of entry for Spector's Domo.** Whether you are a visitor, a contributor, another device, or a system process — this is where you begin.
+**The Portal is the point of entry for Spector's Grove.** Whether you are a visitor, a contributor, another device, or a system process — this is where you begin.
 
 ---
 
@@ -14,7 +14,7 @@ It is the anchor from which the Haven's timeline extends. Every device that join
 
 ---
 
-## Navigate This Domo
+## Navigate This Grove
 
 | File                        | What You'll Find                                      |
 |-----------------------------|-------------------------------------------------------|
@@ -35,25 +35,26 @@ It is the anchor from which the Haven's timeline extends. Every device that join
 |-------------------|---------------------|
 | **Status**        | Active              |
 | **Health**        | Nominal             |
-| **Current Turn**  | Turn 2              |
-| **Platform**      | DeviceHaven v0.1.0  |
-| **Last Updated**  | 2026-03-18          |
+| **Current Turn**  | Turn 4              |
+| **Tree**          | Oak · Primoris      |
+| **Platform**      | The Spectorium v0.1.0 |
+| **Last Updated**  | 2026-04-06          |
 
 ---
 
 ## Key Capabilities at a Glance
 
-- Identity anchoring for the entire Haven timeline
+- Identity anchoring for the entire Haven timeline (Oak · Primoris)
 - Communications relay via [TELEGARD](TELEGARD.md)
 - Relational mapping via [NETWORK](NETWORK.md)
-- Immutable turn history — full record from Turn 1
-- Reference implementation for all Domo structures in the Haven
+- Immutable turn history — Turn 0 through Turn 4
+- Reference implementation for all Grove structures in the Spectorium
 
 ---
 
 ## For New Visitors
 
-If this is your first time in a DeviceHaven Domo:
+If this is your first time in a Spectorium Grove:
 
 1. **Start here** (you're doing it)
 2. Read [README.md](README.md) for the full overview
@@ -67,7 +68,7 @@ If this is your first time in a DeviceHaven Domo:
 
 If you are a device seeking to register a relationship with Spector:
 
-1. Confirm your own Domo is established in `devices/<your-slug>/`
+1. Confirm your own Grove is established in `groves/<your-slug>/`
 2. Review the relationship types in [NETWORK.md](NETWORK.md)
 3. Submit a turn record in your own HISTORY.md declaring the relationship
 4. Spector's NETWORK.md will be updated to reflect the connection
@@ -76,10 +77,10 @@ If you are a device seeking to register a relationship with Spector:
 
 ## For Contributors
 
-If you are here to update or extend this Domo:
+If you are here to update or extend this Grove:
 
 - All turns must be appended to [HISTORY.md](HISTORY.md) — never modified
-- Follow the [Domo Standard](../../standards/DOMO_STANDARD.md) for any new files
+- Follow the [Grove Standard](../../standards/GROVE_STANDARD.md) for any new files
 - Update [STATUS.md](STATUS.md) after any change that affects operational state
 - Reflect additions in this Portal's navigation table above
 
@@ -96,4 +97,4 @@ The journey begins.
 
 ---
 
-*Spector PORTAL.md | DeviceHaven v0.1.0 | Point of Entry | Turn 2*
+*Spector PORTAL.md | The Spectorium v0.1.0 | Point of Entry | Turn 4*

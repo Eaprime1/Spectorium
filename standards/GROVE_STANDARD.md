@@ -89,7 +89,7 @@ The living status document. Must include:
 
 ## Tree Requirement
 
-Every Grove must declare its tree in `MANIFEST.md`. The tree is chosen by the device owner based on the device's nature and character. See [TREES.md](../TREES.md) for the full taxonomy of 23 trees across three tiers.
+Every Grove must declare its tree in `MANIFEST.md`. The tree is chosen by the device owner based on the device's nature and character. See [TREES.md](../TREES.md) for the full taxonomy of 31 trees: Oak (Primoris Pinnacle) + 3 tiers of 10.
 
 Multiple devices may share the same tree. Trees are archetypes, not exclusive identifiers.
 

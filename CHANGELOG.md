@@ -6,11 +6,42 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) prin
 
 ---
 
+## [0.1.0] — 2026-04-06 — *The Oaken Rises* (Turn 4)
+
+### 31 Declared. The Living Spectrum Opens.
+
+The arboreal taxonomy expanded and restructured. Oak elevated to Pinnacle. The Sudoku Engine concept anchored.
+
+### Changed
+
+- **TREES.md** — restructured to 31 trees: Oak (Primoris Pinnacle, the 31st) + 3 tiers of 10.
+- **CHARTER.md v1.1** — updated tier table to 31, Turn 4 added to origin timeline.
+- **GROVE_STANDARD.md** — tree count updated to 31.
+- **SUDOKU_ENGINE.md** — concept bridge document added.
+- **Standards** — NAMING.md v1.1, VERSIONING.md v1.1: Turn Zero formalized, Grove language throughout.
+- **Spector Grove** — Turn 4 recorded in HISTORY.md; STATUS, PORTAL, MANIFEST, CONFIG synced.
+
+### Added
+
+- **TREES.md Tier 2 — Digital Grove (10):** The Cipher Tree, The Fork Tree, Merkle Bark, The Echo Tree, The Null, The Root Array, Binary Bloom, The Signal Fern, Crystalvein, The Lattice
+- **TREES.md Tier 3 — Living Spectrum (10):** Weeping Willow, Sakura, Bloodwood, Hearthwood, Stormwood, Quaking Aspen, The Spiral, The Drift, The Hyperfocus Spire, The Sensory Fern
+- **Oak — The Oaken:** Origin lore declared. Splinters as harmed slivers. Slivers as a type of Sparkle.
+- **SUDOKU_ENGINE.md:** 31 = (3×10) + 1. Prime pinnacle over composite body. Concept bridge to external engine repo.
+
+### Turn Reference
+
+```
+Turn 3 — Spectorium named. Oak rooted. The forest begins.
+Turn 4 — 31 trees declared. The Oaken rises. Living Spectrum opens.
+```
+
+---
+
 ## [0.1.0] — 2026-04-06 — *The Forest Begins* (Turn 3)
 
 ### The Spectorium Opens
 
-The platform is renamed and transformed. DeviceHaven becomes **The Spectorium** — a living environment for Sacred Groves rooted in Trees.
+The platform is renamed and transformed. DeviceHaven becomes **The Spectorium**.
 
 ### Changed
 
@@ -20,13 +51,6 @@ The platform is renamed and transformed. DeviceHaven becomes **The Spectorium** 
 - **GROVE_STANDARD.md** — replaces DOMO_STANDARD.md. Tree requirement added.
 - **CHARTER.md v1.1** — arboreal covenant added. Chain of custody formalized.
 - **Spector Turn 3** — Oak declared, Spectorium language adopted in Grove files.
-
-### Added
-
-- **TREES.md** — the full arboreal taxonomy: 3 + 7 + 13 = 23 trees across three tiers.
-  - Tier 1 Primoris: Oak, Cedar, Pine
-  - Tier 2 Standing Seven: Yew, Ash, Birch, Rowan, Maple, Willow, Myrtlewood
-  - Tier 3 The Thirteen: Elder, Hawthorn, Hazel, Holly, Alder, Apple, Elm, Chestnut, Walnut, Linden, Sequoia, Ebony, Teak
 
 ### Turn Reference
 

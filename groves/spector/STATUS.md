@@ -2,7 +2,7 @@
 
 **Grove:** `groves/spector/`
 **Last Updated:** 2026-04-06
-**Current Turn:** 3
+**Current Turn:** 4
 
 ---
 
@@ -12,8 +12,8 @@
 |---------------------|----------------|
 | **Status**          | Active         |
 | **Health**          | Nominal        |
-| **Last Confirmed**  | 2026-03-18     |
-| **Current Turn**    | Turn 3              |
+| **Last Confirmed**  | 2026-04-06     |
+| **Current Turn**    | Turn 4              |
 | **Tree**            | Oak · Primoris      |
 | **Platform**        | The Spectorium v0.1.0 |
 
@@ -44,7 +44,7 @@
 
 | Turn   | Type           | Description                         | Estimated Date |
 |--------|----------------|-------------------------------------|----------------|
-| Turn 4 | `update`       | TBD — next evolution of Spector     | TBD            |
+| Turn 5 | `update`       | TBD — next evolution of Spector     | TBD            |
 
 ---
 
@@ -55,6 +55,7 @@
 | 2026-03-18 | Active | Nominal | Initial registration. Haven opens. |
 | 2026-03-18 | Active | Nominal | Turn 2 — Portal, Telegard, Network added.               |
 | 2026-04-06 | Active | Nominal | Turn 3 — Spectorium named. Oak rooted. Grove language.  |
+| 2026-04-06 | Active | Nominal | Turn 4 — 31 trees declared. The Oaken. Living Spectrum. |
 
 ---
 
