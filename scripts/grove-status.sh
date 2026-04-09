@@ -62,9 +62,9 @@ check_grove() {
 
   # Tree declared?
   if [[ -f "$grove_path/MANIFEST.md" ]]; then
-    if grep -q "^\*\*Tree\*\*" "$grove_path/MANIFEST.md" 2>/dev/null; then
+    if grep -q "| \*\*Tree\*\*" "$grove_path/MANIFEST.md" 2>/dev/null; then
       local tree
-      tree=$(grep "^\*\*Tree\*\*" "$grove_path/MANIFEST.md" | head -1 | sed 's/.*| *//;s/ *|.*//')
+      tree=$(grep "| \*\*Tree\*\*" "$grove_path/MANIFEST.md" | head -1 | awk -F'|' '{print $3}' | sed 's/^ *//;s/ *$//')
       pass "Tree declared: ${CYAN}$tree${RESET}"
     else
       warn "No tree declared in MANIFEST.md"
