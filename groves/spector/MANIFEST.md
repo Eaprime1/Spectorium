@@ -1,32 +1,33 @@
-# Spector — Device Manifest
+# Spector — Grove Manifest
 
-**Domo:** `devices/spector/`
-**Manifest Version:** 1.0
-**Last Updated:** 2026-03-18
+**Grove:** `groves/spector/`
+**Manifest Version:** 1.1
+**Last Updated:** 2026-04-06
 
 ---
 
-## Device Identity
+## Grove Identity
 
 | Field              | Value                                          |
 |--------------------|------------------------------------------------|
 | **Device Name**    | Spector                                        |
 | **Device Slug**    | `spector`                                      |
 | **Device ID**      | `spector-origin-001`                           |
+| **Tree**           | Oak (*Quercus*) · Tier 1 — Primoris            |
 | **Device Type**    | Origin                                         |
 | **Haven Turn**     | Turn 1                                         |
 | **Registered**     | 2026-03-18                                     |
 | **Status**         | Active                                         |
 | **Owner**          | DeviceHaven Collective                         |
-| **Domo Version**   | 1.0.0                                          |
+| **Grove Version**  | 1.1.0                                          |
 
 ---
 
 ## Description
 
-Spector is the first registered device in DeviceHaven. It is designated as the **Origin Device** — the anchor from which the Haven's timeline begins. Spector's Domo is the canonical reference implementation for all device Domos in the platform.
+Spector is the Origin Device of the Spectorium — the anchor from which the Haven's timeline begins. Spector IS DeviceHaven. Spector's Grove is the canonical reference implementation for all Groves in the Spectorium.
 
-Spector's primary function within the Haven is identity and continuity. It represents the platform's genesis and provides the structural blueprint for all devices that follow.
+Spector's tree is **Oak** — the Primoris Pinnacle. Spector's primary function is identity, continuity, and the anchoring of the forest's origin.
 
 ---
 
@@ -55,8 +56,8 @@ Spector's primary function within the Haven is identity and continuity. It repre
 
 | Interface       | Type          | Description                                           |
 |-----------------|---------------|-------------------------------------------------------|
-| Domo Files      | Filesystem    | All Domo files accessible via `devices/spector/`      |
-| Registry Entry  | Document      | Listed in root `DEVICES.md`                           |
+| Grove Files     | Filesystem    | All Grove files accessible via `groves/spector/`      |
+| Registry Entry  | Document      | Listed in root `GROVES.md`                            |
 | Turn Log        | Append-Only   | HISTORY.md — immutable turn record                    |
 
 ---
@@ -65,14 +66,14 @@ Spector's primary function within the Haven is identity and continuity. It repre
 
 | Dependency          | Type      | Required | Description                                    |
 |---------------------|-----------|----------|------------------------------------------------|
-| DeviceHaven v0.1.0+ | Platform  | Yes      | The Haven platform and standards               |
-| Domo Standard v1.0  | Standard  | Yes      | Structure and file requirements for this Domo  |
+| The Spectorium v0.1.0+ | Platform  | Yes      | The Spectorium platform and standards          |
+| Grove Standard v1.1    | Standard  | Yes      | Structure and file requirements for this Grove |
 
 ---
 
 ## Tags
 
-`origin` · `turn-1` · `reference-implementation` · `active` · `v0.1.0`
+`origin` · `oak` · `primoris` · `turn-1` · `reference-grove` · `active` · `v0.1.0`
 
 ---
 
@@ -82,4 +83,4 @@ Spector's registration constitutes Turn 1 of the Haven's global turn timeline. T
 
 ---
 
-*Spector MANIFEST.md | DeviceHaven v0.1.0*
+*Spector MANIFEST.md | The Spectorium v0.1.0*

@@ -1,0 +1,69 @@
+name: Propose a Turn
+description: Propose a new turn for an existing Grove
+title: "turn(<grove-slug>): turn N — <brief description>"
+labels: ["turn-proposal"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Turn Proposal
+        A turn is a discrete, recorded event in a device's lifecycle. Once written, turns are immutable.
+        Propose what should be recorded — the maintainer will append it to HISTORY.md.
+
+  - type: input
+    id: grove
+    attributes:
+      label: Grove
+      description: Which Grove does this turn belong to?
+      placeholder: "e.g. spector"
+    validations:
+      required: true
+
+  - type: input
+    id: turn-number
+    attributes:
+      label: Turn Number
+      description: What turn number should this be? (Check HISTORY.md for the current latest)
+      placeholder: "e.g. Turn 5"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: turn-type
+    attributes:
+      label: Turn Type
+      options:
+        - registration
+        - update
+        - capability-change
+        - status-change
+        - config-change
+        - incident
+        - relationship
+        - decommission
+    validations:
+      required: true
+
+  - type: textarea
+    id: turn-description
+    attributes:
+      label: Turn Description
+      description: What happened? What changed? Why does it matter? This text will go into HISTORY.md.
+      placeholder: "Describe the event in 1-5 sentences. Be specific — this is an immutable record."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Turn Checklist
+      options:
+        - label: Turn number is the correct next sequential number
+          required: true
+        - label: Turn type accurately reflects what changed
+          required: true
+        - label: STATUS.md will be updated if operational state changes
+          required: false
+        - label: GROVES.md turn counter will be updated
+          required: false

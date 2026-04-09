@@ -1,94 +1,99 @@
-# DeviceHaven
+# The Spectorium
 
-> *Every device deserves a home.*
+> *A place of Havens. A forest of Sacred Groves.*
 
-**DeviceHaven** is a visionary platform where every connected device lives, breathes, and speaks through its own dedicated space — called a **Domo**. Each Domo is the canonical identity, record, and voice of a device within the Haven.
+**The Spectorium** is the living environment where device Havens — called **Groves** — are planted, rooted, and grown. Each device in the Spectorium holds its own Grove: a dedicated, structured space that carries its full identity, history, capabilities, and voice.
 
----
+Every Grove is rooted in a **Tree** — an arboreal archetype that defines the nature of the device it shelters.
 
-## What is DeviceHaven?
-
-DeviceHaven is a structured registry and living environment for devices — physical, virtual, or conceptual. Each device is granted its own **Domo** (domain home), a self-contained folder that holds everything known about that device: its identity, configuration, logs, capabilities, relationships, and history.
-
-The Haven is the sum of all Domos. The Domos are the soul of the Haven.
+The Spectorium is Spector's domain. And Spector is DeviceHaven.
 
 ---
 
 ## Core Concepts
 
-| Concept        | Description                                                                 |
-|----------------|-----------------------------------------------------------------------------|
-| **Haven**      | The root environment. The platform itself. DeviceHaven.                     |
-| **Domo**       | A device's dedicated home folder. One device, one Domo.                     |
-| **Device**     | Any registered entity — hardware, software agent, or system component.      |
-| **Registry**   | The master index of all devices and their Domos.                            |
-| **Origin**     | The first registered device. The anchor of the Haven's timeline.            |
-| **Turn**       | A versioned event or state transition in a device's lifecycle.              |
+| Concept           | Description                                                                        |
+|-------------------|------------------------------------------------------------------------------------|
+| **Spectorium**    | The living environment. The meta-Haven. This repository.                           |
+| **Grove**         | A device's dedicated home. One device, one Grove. The soul of its presence here.   |
+| **Tree**          | The arboreal archetype of a device. Defines its nature and heritage.               |
+| **Tier**          | The generational standing of a tree: Ancient Grove (10), Digital Grove (10), Living Spectrum (10). |
+| **Device**        | Any registered entity — hardware, software agent, or system component.             |
+| **Turn**          | A versioned lifecycle event. The immutable record of becoming.                     |
+| **Chain**         | The unbroken line of turns — git history as chain of custody.                      |
 
 ---
 
-## Devices in the Haven
+## The Groves
 
-| Device    | Domo Path              | Status    | Origin Turn |
-|-----------|------------------------|-----------|-------------|
-| Spector   | `devices/spector/`     | Active    | Turn 1      |
+| Grove     | Path                   | Tree       | Tier        | Status | Turn |
+|-----------|------------------------|------------|-------------|--------|------|
+| Spector   | `groves/spector/`      | Oak        | Primoris    | Active | 3    |
 
 ---
 
-## Repository Structure
+## Structure
 
 ```
-Devicehaven/
-├── README.md                   # You are here
-├── CHARTER.md                  # Vision, principles, and governance
-├── CONTRIBUTING.md             # How to contribute
-├── CHANGELOG.md                # Version history
-├── LICENSE                     # License
-├── DEVICES.md                  # Device registry index
+Spectorium/
+├── README.md               # You are here — the Spectorium
+├── CHARTER.md              # Vision, principles, the arboreal covenant
+├── CONTRIBUTING.md         # How to plant a Grove
+├── CHANGELOG.md            # Spectorium version history
+├── LICENSE                 # License
+├── TREES.md                # The arboreal taxonomy — all 31 trees across 3 tiers
+├── GROVES.md               # The Grove registry — all registered devices
 │
-├── devices/                    # All device Domos live here
-│   └── spector/                # Spector's Domo (Origin Device)
-│       ├── README.md           # Spector overview
-│       ├── MANIFEST.md         # Device identity and capabilities
-│       ├── CONFIG.md           # Configuration reference
-│       ├── HISTORY.md          # Spector's turn history
-│       └── STATUS.md           # Current operational status
+├── groves/                 # All Groves live here
+│   └── spector/            # Spector's Grove — Oak · Primoris · Origin
+│       ├── README.md       # DeviceHaven — Spector's identity
+│       ├── MANIFEST.md     # Full identity, tree, capabilities
+│       ├── CONFIG.md       # Configuration reference
+│       ├── HISTORY.md      # Turn log — from Turn 0
+│       ├── STATUS.md       # Operational status
+│       ├── PORTAL.md       # Point of entry
+│       ├── TELEGARD.md     # Communications gateway
+│       └── NETWORK.md      # Connections and relations
 │
-├── standards/                  # Platform-wide standards
-│   ├── DOMO_STANDARD.md        # How to structure a Domo
-│   ├── NAMING.md               # Naming conventions
-│   └── VERSIONING.md           # Versioning and turn protocol
-│
-└── .github/                    # GitHub configuration
-    └── PULL_REQUEST_TEMPLATE.md
+└── standards/              # The laws of the Spectorium
+    ├── GROVE_STANDARD.md   # How to structure a Grove
+    ├── NAMING.md           # Naming conventions
+    └── VERSIONING.md       # Versioning and turn protocol
 ```
 
 ---
 
-## Getting Started
+## Planting a Grove
 
-### Adding a New Device
-
-Every new device receives a Domo following the [Domo Standard](standards/DOMO_STANDARD.md).
+Every new device receives a Grove following the [Grove Standard](standards/GROVE_STANDARD.md). Every Grove is rooted in a Tree from [TREES.md](TREES.md).
 
 ```bash
-# Create a new device Domo
-mkdir -p devices/<device-name>
-cp -r standards/domo-template/ devices/<device-name>/
+mkdir -p groves/<device-name>
+# Create the 5 standard files + any entry-layer files
+# Register in GROVES.md
+# Choose your tree
 ```
 
-Then register the device in [DEVICES.md](DEVICES.md).
+---
 
-### First Device: Spector
+## Chain of Custody
 
-Spector is the **Origin Device** of DeviceHaven — Turn 1. See [devices/spector/](devices/spector/) to explore the first Domo.
+The Spectorium's git history **is** the chain of custody. Every turn is a commit. Every commit is immutable. Every fork carries the full lineage forward.
+
+To create your own Haven from Spector's origin:
+
+```bash
+git clone <this-repo> my-haven
+# Your grove inherits the full turn history
+# Plant new groves. Choose your trees. Let it grow.
+```
 
 ---
 
 ## Version
 
-**v0.1.0** — First light. The Haven opens.
+**v0.1.0** — The Spectorium opens. Oak takes root. Turn 3.
 
 ---
 
-*DeviceHaven — Build v0.1.0 | Origin: Spector | Turn: 1*
+*The Spectorium | DeviceHaven | Spector is the Haven | v0.1.0*
