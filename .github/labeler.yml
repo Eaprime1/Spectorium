@@ -1,0 +1,15 @@
+# Configuration for the Labeler action
+# Add labels based on paths modified in pull requests
+
+documentation:
+  - changed-files:
+    - any-glob-match-pattern: 'docs/**'
+
+bug:
+  - changed-files:
+    - any-glob-match-pattern: '**/*.bug'
+
+feature:
+  - changed-files:
+    - any-glob-match-pattern: 'src/**'
+    - any-glob-match-pattern: 'lib/**'
