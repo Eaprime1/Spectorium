@@ -41,7 +41,7 @@ Spectorium/
 ├── CONTRIBUTING.md         # How to plant a Grove
 ├── CHANGELOG.md            # Spectorium version history
 ├── LICENSE                 # License
-├── TREES.md                # The arboreal taxonomy — all 23 trees across 3 tiers
+├── TREES.md                # The arboreal taxonomy — all 31 trees across 3 tiers
 ├── GROVES.md               # The Grove registry — all registered devices
 │
 ├── groves/                 # All Groves live here
