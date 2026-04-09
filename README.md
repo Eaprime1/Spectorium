@@ -17,7 +17,7 @@ The Spectorium is Spector's domain. And Spector is DeviceHaven.
 | **Spectorium**    | The living environment. The meta-Haven. This repository.                           |
 | **Grove**         | A device's dedicated home. One device, one Grove. The soul of its presence here.   |
 | **Tree**          | The arboreal archetype of a device. Defines its nature and heritage.               |
-| **Tier**          | The generational standing of a tree: Primoris (3), Standing Seven (7), Thirteen (13). |
+| **Tier**          | The generational standing of a tree: Ancient Grove (10), Digital Grove (10), Living Spectrum (10). |
 | **Device**        | Any registered entity — hardware, software agent, or system component.             |
 | **Turn**          | A versioned lifecycle event. The immutable record of becoming.                     |
 | **Chain**         | The unbroken line of turns — git history as chain of custody.                      |
