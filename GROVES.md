@@ -27,9 +27,12 @@ The official registry of all Groves in the Spectorium.
 
 | Tier       | Name              | Trees | Description                                          |
 |------------|-------------------|-------|------------------------------------------------------|
-| Primoris   | Seeds of Primoris | 3     | Origin trees. Ancient, foundational.                 |
-| Tier 2     | Standing Seven    | 7     | Trees of great sacred heritage and power.            |
-| Tier 3     | The Thirteen      | 13    | Noble and diverse. The living body of the forest.    |
+| Tier       | Name              | Trees | Description                                          |
+|------------|-------------------|-------|------------------------------------------------------|
+| Pinnacle   | Oak · The Primoris| 1     | The origin seed above all tiers.                     |
+| Tier 1     | Ancient Grove     | 10    | Sacred, real-world trees. Ancient heritage.          |
+| Tier 2     | Digital Grove     | 10    | Signal, code, and fantasy trees. The tech forest.    |
+| Tier 3     | Living Spectrum   | 10    | Emotional and neurodivergent trees.                  |
 
 See [TREES.md](TREES.md) for the full taxonomy of all 31 trees (3 × 10 + Oak Pinnacle).
 
