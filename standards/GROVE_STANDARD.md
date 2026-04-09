@@ -72,7 +72,7 @@ The configuration reference. Must include:
 The immutable turn log. Rules:
 - Turns are **append-only** — never delete or modify existing turns
 - Each turn must include: turn number, date, type, and description
-- Turn types: `registration`, `update`, `capability-change`, `status-change`, `incident`, `relationship`, `decommission`
+- Turn types: `genesis`, `registration`, `update`, `capability-change`, `status-change`, `config-change`, `incident`, `relationship`, `decommission` 
 - The first entry is always the registration turn (Turn 1)
 - Turn 0 may optionally be declared as a genesis/potential entry
 
