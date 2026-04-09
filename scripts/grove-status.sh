@@ -89,7 +89,7 @@ check_grove() {
   # STATUS current turn vs HISTORY current turn
   if [[ -f "$grove_path/STATUS.md" && -f "$grove_path/HISTORY.md" ]]; then
     local status_turn history_turns
-    status_turn=$(grep "^\*\*Current Turn:\*\*" "$grove_path/STATUS.md" | head -1 | grep -o '[0-9]*' || echo "?")
+    status_turn=$(grep "| \*\*Current Turn\*\*" "$grove_path/STATUS.md" | head -1 | grep -o '[0-9]*' || echo "?")
     history_turns=$(grep -c "^## Turn [0-9]" "$grove_path/HISTORY.md" 2>/dev/null || echo "0")
 
     if [[ "$status_turn" == "?" ]]; then
