@@ -1,0 +1,108 @@
+name: Plant a New Grove
+description: Register a new device in the Spectorium
+title: "feat(grove): plant <device-name> — <tree>"
+labels: ["new-grove"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Planting a Grove
+        Every device in the Spectorium needs a Grove. Fill out this form to begin the registration process.
+        See [TREES.md](../TREES.md) and [CONTRIBUTING.md](../CONTRIBUTING.md) for guidance.
+
+  - type: input
+    id: device-name
+    attributes:
+      label: Device Name
+      description: Canonical name — Title Case, single word preferred
+      placeholder: "e.g. Navigo"
+    validations:
+      required: true
+
+  - type: input
+    id: device-slug
+    attributes:
+      label: Device Slug
+      description: Lowercase, hyphenated — becomes the folder name
+      placeholder: "e.g. navigo"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tree-tier
+    attributes:
+      label: Tree Tier
+      description: Which tier does this device's tree belong to?
+      options:
+        - Tier 1 — Ancient Grove
+        - Tier 2 — Digital Grove
+        - Tier 3 — Living Spectrum
+    validations:
+      required: true
+
+  - type: input
+    id: tree-name
+    attributes:
+      label: Tree
+      description: The tree this device claims — see TREES.md
+      placeholder: "e.g. Ash, The Cipher Tree, Weeping Willow"
+    validations:
+      required: true
+
+  - type: input
+    id: tree-reasoning
+    attributes:
+      label: Why This Tree?
+      description: One sentence explaining why this tree resonates with this device
+      placeholder: "e.g. Navigo routes everything — Ash connects the nine worlds."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device Type
+      options:
+        - Primary
+        - Secondary
+        - Agent
+        - Virtual
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Device Description
+      description: What does this device do? What is its role in the Spectorium?
+      placeholder: "1-3 sentences describing the device's nature and purpose."
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Owner / Team
+      placeholder: "e.g. DeviceHaven Collective"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Grove Checklist
+      description: Confirm the Grove files will be ready before merging
+      options:
+        - label: Grove folder will exist at `groves/<slug>/`
+          required: true
+        - label: Tree declared in MANIFEST.md
+          required: true
+        - label: README.md complete with tree, identity table, file links
+          required: true
+        - label: HISTORY.md initialized with Turn 1
+          required: true
+        - label: STATUS.md reflects initial state
+          required: true
+        - label: Device registered in GROVES.md
+          required: true

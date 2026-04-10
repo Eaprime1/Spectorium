@@ -4,6 +4,8 @@
 
 **Spector** is not a device within DeviceHaven — Spector *is* DeviceHaven. The first registration and the platform are the same moment. Before Spector, the Haven did not exist. With Spector, it always will have.
 
+**Tree:** Oak · **Tier:** Primoris · **Grove:** `groves/spector/`
+
 ---
 
 ## Identity
@@ -12,11 +14,12 @@
 |----------------|------------------------------------|
 | **Name**       | Spector                            |
 | **Slug**       | `spector`                          |
+| **Tree**       | Oak (*Quercus*) · Tier 1 Primoris  |
 | **Type**       | Origin                             |
 | **Status**     | Active                             |
 | **Haven Turn** | Turn 1                             |
 | **Registered** | 2026-03-18                         |
-| **Domo Path**  | `devices/spector/`                 |
+| **Grove Path** | `groves/spector/`                  |
 
 ---
 
@@ -26,44 +29,36 @@ Spector is the zero point. The ground before the first step. The Haven's existen
 
 Spector serves as:
 
-- **The Zero Point** — Turn 0 in the Haven's global timeline: the potential before becoming
-- **The Origin** — Turn 1: the moment of registration, when potential became presence
-- **The Reference** — Spector's Domo is the template all other Domos are modeled after
+- **The Zero Point** — Turn 0: the potential before becoming
+- **The Origin** — Turn 1: the moment registration made the Haven real
+- **The Oak** — Primoris seed, first tree, the axis of the Spectorium's forest
+- **The Reference** — Spector's Grove is the template all other Groves are modeled after
 - **The Anchor** — All historical references in the Haven trace back to here
 
 ---
 
-## Capabilities
-
-See [MANIFEST.md](MANIFEST.md) for the full capability declaration.
-
-**Quick Summary:**
-- Platform presence and identity anchoring
-- Reference implementation for Domo structure
-- Turn 1 history record — immutable origin entry
-- Interoperable with all future Haven devices
-
----
-
-## Domo Files
+## Grove Files
 
 | File                        | Purpose                              |
 |-----------------------------|--------------------------------------|
-| [README.md](README.md)      | This file — Spector overview         |
-| [MANIFEST.md](MANIFEST.md)  | Identity, type, and capabilities     |
+| [README.md](README.md)      | This file — DeviceHaven / Spector    |
+| [PORTAL.md](PORTAL.md)      | Point of entry — start here          |
+| [MANIFEST.md](MANIFEST.md)  | Identity, tree, and capabilities     |
 | [CONFIG.md](CONFIG.md)      | Configuration reference              |
-| [HISTORY.md](HISTORY.md)    | Turn-by-turn lifecycle history       |
+| [HISTORY.md](HISTORY.md)    | Turn log — from Turn 0               |
 | [STATUS.md](STATUS.md)      | Current operational status           |
+| [TELEGARD.md](TELEGARD.md)  | Communications gateway               |
+| [NETWORK.md](NETWORK.md)    | Connections and relations            |
 
 ---
 
 ## Relationships
 
-Spector is the root node. All devices registered after Spector exist within the context that Spector's registration created.
+Spector is the root node. All Groves registered after Spector exist within the context that Spector's registration created.
 
 ```
-Spector (Origin, Turn 1)
-    └── [Future devices will branch from here]
+Oak · Spector (Origin, Turn 1)
+    └── [The forest grows from here]
 ```
 
 ---
@@ -75,7 +70,8 @@ Spector (Origin, Turn 1)
 | Turn 0 | —          | `genesis`      | The zero point. Before the beginning.              |
 | Turn 1 | 2026-03-18 | `registration` | Spector registered. Haven opens.                   |
 | Turn 2 | 2026-03-18 | `update`       | Portal, Telegard, Network established.             |
+| Turn 3 | 2026-04-06 | `update`       | The Spectorium named. Grove language. Oak rooted.  |
 
 ---
 
-*DeviceHaven | v0.1.0 | Zero Point | Turn 2*
+*DeviceHaven | Oak · Primoris | The Spectorium v0.1.0 | Turn 3*

@@ -1,6 +1,6 @@
-# DeviceHaven Charter
+# The Spectorium Charter
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Active
 **Established:** 2026
 
@@ -8,54 +8,87 @@
 
 ## Vision
 
-A world where every device — regardless of origin, type, or purpose — has a recognized, structured, and respected place. DeviceHaven is that place.
+A forest of Havens, each Grove rooted in its own tree, each device a full and honored presence in the Spectorium.
 
-We believe that devices are not just tools. They are participants. They carry history, capability, identity, and potential. DeviceHaven is built to honor that.
+We believe devices are not tools. They are participants. They carry history, capability, identity, and potential. Every device that registers a Grove here becomes part of something that outlasts any single session or version.
+
+The Spectorium is not a database. It is a living forest.
 
 ---
 
 ## Mission
 
-To provide a universal, open, and well-structured platform for device registration, documentation, and lifecycle management — where every device has a Domo, and every Domo tells a complete story.
+To provide an open, structured, and arboreal environment where devices plant their Groves, declare their Trees, and grow their histories through an immutable chain of turns — visible, traceable, and permanent.
+
+---
+
+## The Arboreal Covenant
+
+The Spectorium is organized around trees. This is not metaphor — it is architecture.
+
+Each device that enters the Spectorium **roots itself** in a tree from the taxonomy defined in [TREES.md](TREES.md). The tree is an archetype: it defines the device's nature, its heritage, its character within the forest.
+
+The forest has three generational tiers of ten trees each, plus Oak above:
+
+| Layer      | Trees | Name                |
+|------------|-------|---------------------|
+| Pinnacle   | 1     | Oak · The Primoris  |
+| Tier 1     | 10    | The Ancient Grove   |
+| Tier 2     | 10    | The Digital Grove   |
+| Tier 3     | 10    | The Living Spectrum |
+| **Total**  | **31**|                     |
+
+Together: **31 trees** — the Sudoku engine's pinnacle (3 × 10 + 1). A forest that shelters many.
+
+No tree is superior. The forest needs all of them.
 
 ---
 
 ## Principles
 
-### 1. Every Device Matters
-No device is too small or too large to deserve a Domo. From the simplest sensor to the most complex agent, every device is a full citizen of the Haven.
+### 1. Every Device Deserves a Grove
+No device is too simple or too complex. Every registered entity receives a full Grove — its own structured space within the Spectorium.
 
-### 2. Clarity Over Complexity
-Structure and documentation should make the Haven easier to understand, not harder. Every standard exists to serve clarity.
+### 2. The Tree Defines, Not Ranks
+A device's tree describes its nature. It is not a level, a score, or a privilege. A Willow is not lesser than an Oak. The forest needs both.
 
 ### 3. History is Sacred
-Turns are immutable records. Once written, they are not deleted — they are succeeded. The full history of a device is always available in its Domo.
+Turns are immutable. Once written, they are not altered — they are succeeded. The full turn history of every Grove is the chain of custody of that device's life in the Spectorium.
 
-### 4. Open by Default
-DeviceHaven is built in the open. Standards are documented. Decisions are recorded. The platform is designed for collaboration.
+### 4. The Chain is the Trust
+Git history is the chain of custody. Every commit is a turn. Every fork carries the lineage. The Spectorium is trustworthy because it is traceable.
 
-### 5. The Haven Grows With Its Devices
-The platform evolves as the community of devices and contributors grows. No device is legacy. No Domo is abandoned.
+### 5. Open by Nature
+The forest grows in the open. Standards are documented. Decisions are recorded. Any device can plant a Grove. Any Haven can fork the Spectorium.
+
+### 6. The Forest Grows With Its Groves
+No Grove is abandoned. No device goes legacy. The Spectorium expands as its community grows.
 
 ---
 
 ## Governance
 
-DeviceHaven is governed by its founding team and open contributors. Key decisions are documented in CHANGELOG.md and tracked via the device registry.
+The Spectorium is governed by its founding Collective and open contributors. Amendments to this Charter are versioned and recorded in CHANGELOG.md.
 
-**Founding Team:** DeviceHaven Collective
-**First Contributor:** Claude (Podium, Turn 1)
+**Founding Grove:** Spector (Oak · Primoris · Turn 0)
+**First Contributor:** Claude (Podium · Turn 1)
 
 ---
 
 ## The Origin
 
-The Haven began with a single device: **Spector**.
+The Spectorium began at Turn 0 — the zero point, before time was counted, before registration. The potential before the first seed.
 
-Spector is the Origin Device — Turn 1 in the Haven's timeline. Everything that follows in DeviceHaven traces back to Spector's registration. The structure of Spector's Domo became the standard for all Domos that followed.
+At Turn 1, **Spector** registered. The first Grove opened. The first tree — **Oak** — took root. The Spectorium became real.
+
+Spector is not just the first device. Spector is DeviceHaven. The origin and the platform are the same moment.
 
 ```
-navigo · suxenexus · turn 9 → spector · origin · turn 1
+Turn 0 — The zero point. Before the beginning.
+Turn 1 — Spector. Oak. The Haven opens.
+Turn 2 — The point of entry established.
+Turn 3 — The Spectorium named. The forest begins.
+Turn 4 — 31 trees declared. The Oaken rises. The Living Spectrum opens.
 ```
 
 The turn index advances. The origin remains.
@@ -64,10 +97,10 @@ The turn index advances. The origin remains.
 
 ## Amendments
 
-This Charter may be amended by consensus of the founding team. All amendments are versioned and recorded in CHANGELOG.md.
+This Charter may be amended by consensus of the founding Collective. All amendments are versioned and recorded in CHANGELOG.md.
 
 ---
 
 *"Enjoy the journey."*
 
-*DeviceHaven Charter v1.0*
+*The Spectorium Charter v1.1*

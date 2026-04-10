@@ -1,14 +1,14 @@
 # Spector — Configuration Reference
 
-**Domo:** `devices/spector/`
-**Config Version:** 1.0
-**Last Updated:** 2026-03-18
+**Grove:** `groves/spector/`
+**Config Version:** 1.1
+**Last Updated:** 2026-04-06
 
 ---
 
 ## Overview
 
-This document describes all configurable parameters for Spector within the DeviceHaven platform. As the Origin Device, Spector's configuration is deliberately minimal — its primary role is presence and identity, not complex operation.
+This document describes all configurable parameters for Spector within the Spectorium. As the Origin Device and Oak of the Primoris, Spector's configuration is deliberately minimal — its primary role is presence, identity, and the anchoring of the forest.
 
 ---
 
@@ -21,7 +21,9 @@ This document describes all configurable parameters for Spector within the Devic
 | `device.id`        | `spector-origin-001` | Yes   | Unique device identifier                              |
 | `device.type`      | `origin`           | Yes      | Device classification type                            |
 | `device.status`    | `active`           | Yes      | Operational status                                    |
-| `device.domo_path` | `devices/spector/` | Yes      | Path to this device's Domo folder                     |
+| `device.grove_path`| `groves/spector/`  | Yes      | Path to this device's Grove folder                    |
+| `device.tree`      | `oak`              | Yes      | Arboreal archetype (from TREES.md)                    |
+| `device.tier`      | `primoris`         | Yes      | Tree tier (primoris / tier-2 / tier-3)                |
 
 ---
 
@@ -31,8 +33,8 @@ This document describes all configurable parameters for Spector within the Devic
 |------------------------|------------|----------|--------------------------------------------------------|
 | `haven.turn`           | `1`        | Yes      | Haven turn at which this device was registered         |
 | `haven.origin`         | `true`     | Yes      | Whether this device is the Haven's origin device       |
-| `haven.registry_entry` | `true`     | Yes      | Whether this device appears in root DEVICES.md         |
-| `haven.domo_version`   | `1.0`      | Yes      | Version of the Domo Standard this device follows       |
+| `haven.registry_entry` | `true`     | Yes      | Whether this device appears in root GROVES.md          |
+| `haven.grove_standard` | `1.1`      | Yes      | Version of the Grove Standard this device follows      |
 
 ---
 
@@ -51,8 +53,9 @@ This document describes all configurable parameters for Spector within the Devic
 | Parameter               | Default         | Description                                              |
 |-------------------------|-----------------|----------------------------------------------------------|
 | `history.mode`          | `append-only`   | Turn records are append-only — never modified            |
-| `history.turn_start`    | `1`             | First turn number (always 1 for any device)              |
-| `history.current_turn`  | `1`             | Current highest turn for this device                     |
+| `history.turn_zero`     | `true`          | Whether Turn 0 (genesis) is declared for this Grove      |
+| `history.turn_start`    | `1`             | First numbered turn (registration)                       |
+| `history.current_turn`  | `4`             | Current highest turn for this device                     |
 
 ---
 
@@ -71,10 +74,10 @@ The following parameters are fixed for Spector and **cannot be changed**:
 
 ## Configuration Notes
 
-- Spector's configuration is managed via this document and the Domo files.
+- Spector's configuration is managed via this document and the Grove files.
 - No runtime configuration file is currently required — Spector operates at the platform-document level.
 - Future versions may introduce machine-readable config formats (YAML, TOML) alongside this documentation.
 
 ---
 
-*Spector CONFIG.md | DeviceHaven v0.1.0*
+*Spector CONFIG.md | The Spectorium v0.1.0*

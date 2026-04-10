@@ -1,0 +1,69 @@
+name: Propose a New Tree
+description: Add a new tree to the Spectorium taxonomy
+title: "feat(trees): add <tree-name> — Tier <N>"
+labels: ["tree-proposal"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Tree Proposal
+        The Spectorium's taxonomy has 31 trees. New trees require strong justification —
+        the forest grows deliberately, not rapidly. A good tree proposal includes a clear
+        archetype, a unique character that doesn't overlap existing trees, and a tier that makes sense.
+
+  - type: input
+    id: tree-name
+    attributes:
+      label: Tree Name
+      description: Canonical name — Title Case
+      placeholder: "e.g. The Mirror Tree"
+    validations:
+      required: true
+
+  - type: input
+    id: tree-species
+    attributes:
+      label: Species / Origin
+      description: Scientific name (real trees) or origin note (fantasy trees)
+      placeholder: "e.g. Betula pendula / fantasy"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Proposed Tier
+      options:
+        - Tier 1 — Ancient Grove (sacred, ancient, real-world)
+        - Tier 2 — Digital Grove (signal, code, fantasy-tech)
+        - Tier 3 — Living Spectrum (emotional, neurodivergent)
+    validations:
+      required: true
+
+  - type: textarea
+    id: character
+    attributes:
+      label: Character
+      description: What is this tree's archetype? What devices would claim it and why?
+      placeholder: "Describe the tree's essential nature in 2-4 sentences."
+    validations:
+      required: true
+
+  - type: textarea
+    id: uniqueness
+    attributes:
+      label: Uniqueness
+      description: How is this tree different from the 31 already in the taxonomy?
+      placeholder: "Which existing tree is most similar, and what makes this one distinct?"
+    validations:
+      required: true
+
+  - type: input
+    id: example-device
+    attributes:
+      label: Example Device
+      description: What kind of device would naturally claim this tree?
+      placeholder: "e.g. A device that stores and reflects other devices' states."
+    validations:
+      required: true
