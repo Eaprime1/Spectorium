@@ -1,0 +1,35 @@
+# Configuration for the Labeler action
+# Add labels based on paths modified in pull requests
+
+documentation:
+  - changed-files:
+    - any-glob-match-pattern: 'docs/**'
+
+bug:
+  - changed-files:
+    - any-glob-match-pattern: '**/*.bug'
+
+feature:
+  - changed-files:
+    - any-glob-match-pattern: 'src/**'
+    - any-glob-match-pattern: 'lib/**'
+    tests:
+  - changed-files:
+    - any-glob-match-pattern: '**/*.test.*'
+    - any-glob-match-pattern: '**/*.spec.*'
+    - any-glob-match-pattern: 'tests/**'
+
+dependencies:
+  - changed-files:
+    - any-glob-match-pattern: 'package.json'
+    - any-glob-match-pattern: 'package-lock.json'
+    - any-glob-match-pattern: 'yarn.lock'
+
+config:
+  - changed-files:
+    - any-glob-match-pattern: '*.config.*'
+    - any-glob-match-pattern: '.github/**'
+
+ci:
+  - changed-files:
+    - any-glob-match-pattern: '.github/workflows/**'

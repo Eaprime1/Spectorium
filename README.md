@@ -1,10 +1,21 @@
 # The Spectorium
+# spectorium
 
 > *A place of Havens. A forest of Sacred Groves.*
 
+#<<<<<< dev
 **The Spectorium** is the living environment where device Havens — called **Groves** — are planted, rooted, and grown. Each device in the Spectorium holds its own Grove: a dedicated, structured space that carries its full identity, history, capabilities, and voice.
 
 Every Grove is rooted in a **Tree** — an arboreal archetype that defines the nature of the device it shelters.
+#=======
+*spectorium** is a visionary platform where every connected device lives, breathes, and speaks through its own dedicated space — called a **Domo**. Each Domo is the canonical identity, record, and voice of a device within the Haven.
+
+#---
+
+## What is Spectorium?
+
+Sectorium is a structured registry and living environment for devices — physical, virtual, or conceptual. Each device is granted its own **Domo** (domain home), a self-contained folder that holds everything known about that device: its identity, configuration, logs, capabilities, relationships, and history.
+#>>>>>>> main
 
 The Spectorium is Spector's domain. And Spector is DeviceHaven.
 

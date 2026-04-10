@@ -1,0 +1,305 @@
+# Instincts generated from https://github.com/Eaprime1/Spectorium
+# Generated: 2026-04-07T20:07:26.443Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Spectorium-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Commit Length
+
+## Action
+
+Keep commit messages concise (~31 characters)
+
+## Evidence
+
+- Average commit message length: 31 chars
+- Based on 8 commits
+
+---
+id: Spectorium-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Spectorium-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Spectorium-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Spectorium-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: Spectorium-workflow-add-github-actions-workflow
+trigger: "when doing add github actions workflow"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Eaprime1/Spectorium
+---
+
+# Spectorium Workflow Add Github Actions Workflow
+
+## Action
+
+Follow the add-github-actions-workflow workflow:
+1. Create a new YAML file in the .github/workflows directory
+2. Define the workflow's triggers, jobs, and steps within the YAML file
+3. Commit the new workflow file to the repository
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~7x per month
+- Files: .github/workflows/*.yml
+
+---
+id: spectorium-instinct-camelcase-files
+trigger: "When creating or renaming a file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Camelcase Files
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern: namingConventions.files = camelCase
+
+---
+id: spectorium-instinct-camelcase-functions
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase convention
+
+## Evidence
+
+- Pattern: namingConventions.functions = camelCase
+
+---
+id: spectorium-instinct-pascalcase-classes
+trigger: "When declaring a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase convention
+
+## Evidence
+
+- Pattern: namingConventions.classes = PascalCase
+
+---
+id: spectorium-instinct-screaming-constants
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE convention
+
+## Evidence
+
+- Pattern: namingConventions.constants = SCREAMING_SNAKE_CASE
+
+---
+id: spectorium-instinct-relative-imports
+trigger: "When importing modules in TypeScript files"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern: importStyle = relative
+
+---
+id: spectorium-instinct-named-exports
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Named Exports
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern: exportStyle = named
+
+---
+id: spectorium-instinct-separate-tests
+trigger: "When adding or organizing test files"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Separate Tests
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern: testLocation = separate
+
+---
+id: spectorium-instinct-commit-freeform
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Commit Freeform
+
+## Action
+
+Use a short, freeform message without a prefix, typically describing the action (e.g., 'Create label.yml')
+
+## Evidence
+
+- Seen in commit: 'Create label.yml'
+- Seen in commit: 'Add GitHub Actions workflow for greetings'
+- Pattern: commits.prefixes = []
+
+---
+id: spectorium-instinct-add-github-actions-workflow
+trigger: "When introducing or updating repository automation or CI/CD with GitHub Actions"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: Eaprime1/Spectorium
+---
+
+# Spectorium Instinct Add Github Actions Workflow
+
+## Action
+
+Create a new YAML file in .github/workflows, define the workflow's triggers, jobs, and steps, and commit the file
+
+## Evidence
+
+- Pattern: add-github-actions-workflow detected
+- Files: .github/workflows/*.yml
+- Seen in commits: 'Create label.yml', 'Add GitHub Actions workflow for greetings', etc.
+
