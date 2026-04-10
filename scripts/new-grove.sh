@@ -110,15 +110,15 @@ for template_file in "$TEMPLATES_DIR"/*.md; do
   target="$GROVE_PATH/$filename"
 
   sed \
-    -e "s/{{DEVICE_NAME}}/$DEVICE_NAME/g" \
-    -e "s/{{DEVICE_SLUG}}/$DEVICE_SLUG/g" \
-    -e "s/{{TREE_NAME}}/$TREE_NAME/g" \
-    -e "s/{{TREE_SLUG}}/$TREE_SLUG/g" \
-    -e "s/{{TIER}}/$TIER/g" \
-    -e "s/{{TIER_SLUG}}/$TIER_SLUG/g" \
-    -e "s/{{DEVICE_TYPE}}/$DEVICE_TYPE/g" \
-    -e "s/{{OWNER}}/$OWNER/g" \
-    -e "s/{{DATE}}/$DATE/g" \
+    -e "s|{{DEVICE_NAME}}|$DEVICE_NAME|g" \
+    -e "s|{{DEVICE_SLUG}}|$DEVICE_SLUG|g" \
+    -e "s|{{TREE_NAME}}|$TREE_NAME|g" \
+    -e "s|{{TREE_SLUG}}|$TREE_SLUG|g" \
+    -e "s|{{TIER}}|$TIER|g" \
+    -e "s|{{TIER_SLUG}}|$TIER_SLUG|g" \
+    -e "s|{{DEVICE_TYPE}}|$DEVICE_TYPE|g" \
+    -e "s|{{OWNER}}|$OWNER|g" \
+    -e "s|{{DATE}}|$DATE|g" \
     -e "s|{{TAGLINE}}|$TAGLINE|g" \
     -e "s|{{DESCRIPTION}}|$DESCRIPTION|g" \
     "$template_file" > "$target"
