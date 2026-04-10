@@ -91,9 +91,15 @@ check_grove() {
     local status_turn history_turns
     status_turn=$(grep "| \*\*Current Turn\*\*" "$grove_path/STATUS.md" | head -1 | grep -o '[0-9]*' || echo "?")
     history_turns=$(grep -c "^## Turn [0-9]" "$grove_path/HISTORY.md" 2>/dev/null || echo "0")
-
+    local expected_turn=$history_turns
+    if grep -q "^## Turn 0" "$grove_path/HISTORY.md"; then
+      expected_turn=$((history_turns - 1))
+    fi
     if [[ "$status_turn" == "?" ]]; then
       warn "Could not parse current turn from STATUS.md"
+      ((WARNINGS++))
+    elif [[ "$status_turn" != "$expected_turn" ]]; then
+      warn "Turn mismatch: STATUS.md says $status_turn, but HISTORY.md has $expected_turn numbered turns"
       ((WARNINGS++))
     fi
   fi
