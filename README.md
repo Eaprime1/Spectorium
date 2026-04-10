@@ -1,12 +1,12 @@
-# DeviceHaven
+# spectorium
 
 > *Every device deserves a home.*
 
-**DeviceHaven** is a visionary platform where every connected device lives, breathes, and speaks through its own dedicated space — called a **Domo**. Each Domo is the canonical identity, record, and voice of a device within the Haven.
+*spectorium** is a visionary platform where every connected device lives, breathes, and speaks through its own dedicated space — called a **Domo**. Each Domo is the canonical identity, record, and voice of a device within the Haven.
 
 ---
 
-## What is DeviceHaven?
+## What is Spectorium?
 
 DeviceHaven is a structured registry and living environment for devices — physical, virtual, or conceptual. Each device is granted its own **Domo** (domain home), a self-contained folder that holds everything known about that device: its identity, configuration, logs, capabilities, relationships, and history.
 
